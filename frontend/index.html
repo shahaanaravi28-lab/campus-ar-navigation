@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Campus AR Navigation</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="hero-section">
+
+    <!-- Dark Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Content on top of background -->
+    <div class="content">
+        <img src="info/npr_logo.png" alt="NPR Logo" class="logo">
+        <h1> NPR GROUP OF INSTITUTION </h1>
+        <h2>🎓 Campus AR Navigation</h2>
+         
+        <p id="locationStatus">Location not detected</p>
+
+        <button onclick="getLocation()">📍 Detect Current Location</button>
+
+        <select id="destinationDropdown">
+            <option>Select Destination</option>
+        </select>
+
+        <div id="blockDetails"></div>
+
+        <button onclick="startNavigation()">Start Navigation</button>
+
+    </div>
+
+</div>
+
+<script src="java/api.js"></script>
+<script src="java/location.js"></script>
+<script src="java/navigation.js"></script>
+<script src="java/voice.js"></script>
+
+</body>
+</html>

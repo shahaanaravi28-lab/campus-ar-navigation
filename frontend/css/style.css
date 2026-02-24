@@ -1,0 +1,84 @@
+/* Remove default spacing */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo {
+    width: 130px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
+}
+
+/* Full screen background */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url("../info/campus-map.jpg") no-repeat center center/cover;
+}
+
+/* Dark transparent overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust 0.3 - 0.6 for lighter/darker */
+}
+
+/* Content above overlay */
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Location status */
+#locationStatus {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Buttons and dropdown styling */
+button, select {
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button style */
+button {
+    background-color: #fbc02d;
+    color: black;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ffca28;
+}
+
+/* Dropdown */
+select {
+    background-color: white;
+}
+
+/* Block details */
+#blockDetails {
+    margin-top: 15px;
+    font-size: 16px;
+}
