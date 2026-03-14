@@ -1,19 +1,18 @@
 function startNavigation() {
 
-    const selected = document.getElementById("destinationDropdown").value;
-    const block = window.blocksData.find(b => b.block_id === selected);
+    const dropdown = document.getElementById("destinationDropdown");
+    const selectedId = dropdown.value;
 
-    if(!block) {
-        alert("Select destination!");
+    if (!selectedId) {
+        alert("Please select destination");
         return;
     }
 
-    document.getElementById("blockDetails").innerHTML =
-        `<h3>${block.block_name}</h3>
-         <p>Floors:</p>
-         ${block.floors.map(f => `<p>Floor ${f.floor_no} - ${f.details}</p>`).join("")}`;
+    const destination = window.blocksData.find(
+        block => block.block_id == selectedId
+    );
 
-    localStorage.setItem("destination", JSON.stringify(block));
+    localStorage.setItem("destination", JSON.stringify(destination));
 
     window.location.href = "ar.html";
 }
