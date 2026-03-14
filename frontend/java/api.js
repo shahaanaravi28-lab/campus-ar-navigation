@@ -1,4 +1,4 @@
-fetch("http://localhost:5001/api/blocks")
+fetch("/api/locations")
 .then(res => res.json())
 .then(data => {
     const dropdown = document.getElementById("destinationDropdown");

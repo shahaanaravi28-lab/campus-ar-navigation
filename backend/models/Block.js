@@ -7,5 +7,5 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/blocks", blockRoutes);
+app.use("/api/locations", blockRoutes);
 
