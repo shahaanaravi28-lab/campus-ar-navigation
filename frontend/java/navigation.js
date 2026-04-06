@@ -16,3 +16,4 @@ function startNavigation() {
 
     window.location.href = "ar.html";
 }
+ 
